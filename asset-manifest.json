@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/cgasociados/static/css/main.72018ebf.chunk.css",
+    "main.js": "/cgasociados/static/js/main.b26be5f8.chunk.js",
+    "main.js.map": "/cgasociados/static/js/main.b26be5f8.chunk.js.map",
+    "runtime~main.js": "/cgasociados/static/js/runtime~main.41632ecd.js",
+    "runtime~main.js.map": "/cgasociados/static/js/runtime~main.41632ecd.js.map",
+    "static/css/2.4223df75.chunk.css": "/cgasociados/static/css/2.4223df75.chunk.css",
+    "static/js/2.4a061337.chunk.js": "/cgasociados/static/js/2.4a061337.chunk.js",
+    "static/js/2.4a061337.chunk.js.map": "/cgasociados/static/js/2.4a061337.chunk.js.map",
+    "index.html": "/cgasociados/index.html",
+    "precache-manifest.e635207c0aa4024a8bd7979763a54654.js": "/cgasociados/precache-manifest.e635207c0aa4024a8bd7979763a54654.js",
+    "service-worker.js": "/cgasociados/service-worker.js",
+    "static/css/2.4223df75.chunk.css.map": "/cgasociados/static/css/2.4223df75.chunk.css.map",
+    "static/css/main.72018ebf.chunk.css.map": "/cgasociados/static/css/main.72018ebf.chunk.css.map",
+    "static/media/bug.svg": "/cgasociados/static/media/bug.a898e5d1.svg",
+    "static/media/cga.svg": "/cgasociados/static/media/cga.4f350faa.svg"
+  }
+}
