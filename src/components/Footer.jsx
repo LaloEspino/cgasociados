@@ -11,7 +11,7 @@ class Footer extends Component {
               Copyright © by <strong>Campillo Gomez y Asociados S.C.</strong>, 2012, Mexico
             </p>
             <p>
-              <Link to='privacidad'>Aviso de privacidad</Link>
+              <Link to='/privacidad'>Aviso de privacidad</Link>
             </p>
             <p>
               Español - Ingles

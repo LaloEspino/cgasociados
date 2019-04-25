@@ -1,6 +1,9 @@
 import React, { Component, Fragment } from 'react'
 import { Link } from 'react-router-dom'
 
+import cga from '../images/cga.svg'
+import '../styles/components/NavBar.css'
+
 class NavBar extends Component {
 
   constructor(props) {
@@ -23,16 +26,17 @@ class NavBar extends Component {
           <div className='navbar-brand'>
 
             <Link className={`navbar-item ${window.location.pathname === '/' && 'is-active'}`} onClick={this.handleClick} to='/'>
+              <img className='NavBar__image' src={cga} alt='Bug' />
               <p className='title is-6'>
                 CGAsociados
               </p>
             </Link>
 
-            <Link to='' role='button' className={`navbar-burger burger ${this.state.open && 'is-active'}`} onClick={this.handleClick} aria-label='menu' aria-expanded='false' data-target='navbarBasicExample'>
+            <span role='button' className={`navbar-burger burger ${this.state.open && 'is-active'}`} onClick={this.handleClick} aria-label='menu' aria-expanded='false' data-target='navbarBasicExample'>
               <span aria-hidden='true'></span>
               <span aria-hidden='true'></span>
               <span aria-hidden='true'></span>
-            </Link>
+            </span>
           </div>
 
           <div id='navbarBasicExample' className={`navbar-menu ${this.state.open && 'is-active'}`}>
