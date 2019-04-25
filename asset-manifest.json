@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.72018ebf.chunk.css",
-    "main.js": "/static/js/main.9083589b.chunk.js",
-    "main.js.map": "/static/js/main.9083589b.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/css/2.4223df75.chunk.css": "/static/css/2.4223df75.chunk.css",
-    "static/js/2.4a061337.chunk.js": "/static/js/2.4a061337.chunk.js",
-    "static/js/2.4a061337.chunk.js.map": "/static/js/2.4a061337.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.42f96941db41312aa6d0a219df131cfd.js": "/precache-manifest.42f96941db41312aa6d0a219df131cfd.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.4223df75.chunk.css.map": "/static/css/2.4223df75.chunk.css.map",
-    "static/css/main.72018ebf.chunk.css.map": "/static/css/main.72018ebf.chunk.css.map",
-    "static/media/bug.svg": "/static/media/bug.a898e5d1.svg",
-    "static/media/cga.svg": "/static/media/cga.4f350faa.svg"
+    "main.css": "/cgasociados/static/css/main.72018ebf.chunk.css",
+    "main.js": "/cgasociados/static/js/main.9083589b.chunk.js",
+    "main.js.map": "/cgasociados/static/js/main.9083589b.chunk.js.map",
+    "runtime~main.js": "/cgasociados/static/js/runtime~main.41632ecd.js",
+    "runtime~main.js.map": "/cgasociados/static/js/runtime~main.41632ecd.js.map",
+    "static/css/2.4223df75.chunk.css": "/cgasociados/static/css/2.4223df75.chunk.css",
+    "static/js/2.4a061337.chunk.js": "/cgasociados/static/js/2.4a061337.chunk.js",
+    "static/js/2.4a061337.chunk.js.map": "/cgasociados/static/js/2.4a061337.chunk.js.map",
+    "index.html": "/cgasociados/index.html",
+    "precache-manifest.dbe4b0d26156b7ff93871acaab3b2e2e.js": "/cgasociados/precache-manifest.dbe4b0d26156b7ff93871acaab3b2e2e.js",
+    "service-worker.js": "/cgasociados/service-worker.js",
+    "static/css/2.4223df75.chunk.css.map": "/cgasociados/static/css/2.4223df75.chunk.css.map",
+    "static/css/main.72018ebf.chunk.css.map": "/cgasociados/static/css/main.72018ebf.chunk.css.map",
+    "static/media/bug.svg": "/cgasociados/static/media/bug.a898e5d1.svg",
+    "static/media/cga.svg": "/cgasociados/static/media/cga.4f350faa.svg"
   }
 }
