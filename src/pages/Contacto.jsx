@@ -1,6 +1,12 @@
 import React, { Component } from 'react'
+import * as emailjs from 'emailjs-com'
 
 import '../styles/pages/Contacto.css'
+import Message from '../components/Message';
+
+const SERVICE_ID = 'mailgun'
+const TEMPLATE_ID = 'contacto'
+const USER_ID = 'user_r4PIKDjI1hWG5M9kvEzis'
 
 class Contacto extends Component {
 
@@ -13,8 +19,13 @@ class Contacto extends Component {
       telefono: '',
       asunto: '',
       comentario: '',
-      sended: false
+      sended: false,
+      pressed: false
     }
+  }
+
+  componentDidMount() {
+    window.scrollTo(0, 0)
   }
 
   handleChange = (event) => {
@@ -23,13 +34,43 @@ class Contacto extends Component {
     })
   }
 
+  handleClose = () => {
+    this.setState({ sended: false })
+  }
+
+  handleClick = () => {
+    this.restartFields()
+  }
+
   handleSubmit = (event) => {
     event.preventDefault()
-    this.setState({ sended: true })
+
+    this.setState({ pressed: true })
+
     if (this.fieldsIntroduced()) {
-      this.restartFields()
-      console.log('simons')
+
+      const templateParams = {
+        nombre: this.state.nombre,
+        empresa: this.state.empresa,
+        correo: this.state.email,
+        telefono: this.state.telefono,
+        asunto: this.state.asunto,
+        comentario: this.state.comentario
+      }
+
+      emailjs
+        .send(SERVICE_ID, TEMPLATE_ID, templateParams, USER_ID)
+        .then(res => {
+          this.restartFields()
+          this.setState({ sended: true, error: false })
+        })
+        .catch(error => {
+          console.error('Failed to send feedback. Error: ', error)
+          this.setState({ sended: true, error: true })
+        })
+
     }
+
   }
 
   fieldsIntroduced = () => {
@@ -55,7 +96,7 @@ class Contacto extends Component {
       telefono: '',
       asunto: '',
       comentario: '',
-      sended: false
+      pressed: false
     })
   }
 
@@ -89,7 +130,7 @@ class Contacto extends Component {
                         type='text'
                         placeholder='' />
                     </p>
-                    {!this.state.nombre && this.state.sended && <p className='help is-danger'>
+                    {this.state.nombre === null && this.state.pressed && <p className='help is-danger'>
                       Este campo es obligatorio
                   </p>}
                   </div>
@@ -111,7 +152,7 @@ class Contacto extends Component {
                         type='text'
                         placeholder='' />
                     </p>
-                    {!this.state.empresa && this.state.sended && <p className='help is-danger'>
+                    {this.state.empresa === null && this.state.pressed && <p className='help is-danger'>
                       Este campo es obligatorio
                   </p>}
                   </div>
@@ -133,7 +174,7 @@ class Contacto extends Component {
                         type='email'
                         placeholder='' />
                     </p>
-                    {!this.state.email && this.state.sended && <p className='help is-danger'>
+                    {this.state.email === null && this.state.pressed && <p className='help is-danger'>
                       Este campo es obligatorio
                   </p>}
                   </div>
@@ -162,7 +203,7 @@ class Contacto extends Component {
                           placeholder='' />
                       </p>
                     </div>
-                    {!this.state.telefono && this.state.sended && <p className='help is-danger'>
+                    {this.state.telefono === null && this.state.pressed && <p className='help is-danger'>
                       Este campo es obligatorio
                   </p>}
                   </div>
@@ -184,7 +225,7 @@ class Contacto extends Component {
                         type='text'
                         placeholder='' />
                     </p>
-                    {!this.state.asunto && this.state.sended && <p className='help is-danger'>
+                    {this.state.asunto === null && this.state.pressed && <p className='help is-danger'>
                       Este campo es obligatorio
                   </p>}
                   </div>
@@ -206,7 +247,7 @@ class Contacto extends Component {
                         className='textarea'
                         placeholder='Describa en que podemos ayudarle'></textarea>
                     </div>
-                    {!this.state.comentario && this.state.sended && <p className='help is-danger'>
+                    {this.state.comentario === null && this.state.pressed && <p className='help is-danger'>
                       Este campo es obligatorio
                   </p>}
                   </div>
@@ -215,18 +256,26 @@ class Contacto extends Component {
 
               <div className='field is-horizontal'>
                 <div className='field-label'>
-
                 </div>
                 <div className='field-body'>
-                  <div className='field'>
+                  <div className='field is-grouped'>
                     <div className='control'>
                       <button className='button is-link'>
                         Enviar mensaje
                     </button>
                     </div>
+                    <div className='control'>
+                      <button onClick={this.handleClick} className='button is-text'>
+                        Limpiar formulario
+                    </button>
+                    </div>
                   </div>
                 </div>
               </div>
+
+              {this.state.sended &&
+                <Message error={this.state.error} onClose={this.handleClose} />
+              }
 
             </form>
 
@@ -246,18 +295,17 @@ class Contacto extends Component {
                 </p>
 
                 <p>
-                  <strong>Tel</strong>: (55) 5575 8008
-                  (55) 5559 1768
+                  <strong>Tel</strong>: <a href="tel:55 5575 8008">(55) 5575 8008</a> | <a href="tel:55 5559 1768">(55) 5559 1768</a>
                 </p>
 
                 <p>
-                  <strong>Fax</strong>: (55) 5559 1768
+                  <strong>Fax</strong>: <a href="tel:55 5559 1768">(55) 5559 1768</a>
                 </p>
 
                 <p>
-                  <strong>email</strong>: <a href='mailto:contacto@cgasociados.com.mx'>contacto@cgasociados.com.mx</a>
+                  <strong>Email</strong>: <a href='mailto:contacto@cgasociados.com.mx'>contacto@cgasociados.com.mx</a>
                 </p>
-              </div>
+              </div >
             </div>
             <div className='column'>
             </div>
@@ -271,7 +319,8 @@ class Contacto extends Component {
               src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120403.4564725961!2d-99.26816077471352!3d19.429335370300294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff9c25c424a3%3A0xfb07ad54bf83ad94!2sCAMPILLO+G%C3%93MEZ+Y+ASOCIADOS%2C+S.+C.!5e0!3m2!1ses!2smx!4v1551155524826'
               className='Contacto__mapa'
               frameBorder='0'
-              allowFullScreen></iframe>
+              allowFullScreen>
+            </iframe>
           </div>
 
         </div>
@@ -279,5 +328,6 @@ class Contacto extends Component {
     )
   }
 }
+
 
 export default Contacto
