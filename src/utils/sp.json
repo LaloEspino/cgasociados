@@ -1,0 +1,163 @@
+{
+  "pages": {
+    "Home": {
+      "title": "Campillo Gómez y Asociados, S. C.",
+      "title_p": "La firma es una asociación civil cuyo objeto es proveer servicios de asesoría, consultoría y gestión en materia de Propiedad Intelectual, así como ofrecer servicios de apoyo al comercio, tales como registros sanitarios, permisos de importación, litigios, contratos, etc., orientados a la explotación industrial y comercial de los derechos de PI.",
+      "mision_title": "Misión",
+      "mision_p": "Prestar servicios confiables, oportunos, eficaces y eficientes en relación con la Propiedad Intelectual y materias afines, estableciendo relaciones cordiales y profesionales con el personal y los clientes para lograr un beneficio mutuo.",
+      "expreriencia_title": "Experiencia",
+      "expreriencia_p": "Si bien la firma es de las más recientes en su constitución, cuenta con una experiencia en el campo de las marcas y patentes de más de 30 años entre sus socios."
+    },
+    "PropiedadIntelectual": {
+      "title": "Propiedad Intelectual",
+      "p_1": "La actividad innovadora de una empresa es un elemento que mejora su posición e incrementa su competitividad en un creciente mercado global, por ello, cada día es más necesario proteger los desarrollos de las empresas a través de los mecanismos de protección que otorga la Propiedad Intelectual.",
+      "p_2": "Estos mecanismos de protección han sido armonizados en prácticamente todo el mundo por la mediación de la Organización Mundial de la Propiedad Intelectual (OMPI/WIPO), por lo que ya no es complicado lograr proteger los desarrollos en el mundo.",
+      "p_3": "En México se cuenta con tres grandes formas de protección a la Propiedad Intelectual, mismas que son administradas por dos organismos públicos:",
+      "p_4": "I. El Instituto Mexicano de la Propiedad Industrial (IMPI), a cargo de la protección a las invenciones mediante el otorgamiento de Patentes, Modelos de Utilidad y Diseños Industriales, y",
+      "p_5": "II. El Instituto Nacional del Derecho de Autor (INDAUTOR), a cargo de la protección a las obras artísticas, entre otras.",
+      "p_6": "Nuestros servicios incluyen el trámite para la obtención y mantenimiento de los derechos ante ambas instituciones, así como la defensa de los mismos por actos de competencia desleal (piratería).",
+      "subtitle1": "Signos Distintivos",
+      "p_s_1_1": "Registros en México y el extranjero de:",
+      "p_s_1_2": "Marcas",
+      "p_s_1_3": "Avisos Comerciales",
+      "p_s_1_4": "Nombres Comerciales",
+      "subtitle2": "Invenciones",
+      "p_s_2_1": "Búsquedas del Estado de la Técnica",
+      "p_s_2_2": "Redacción de memorias Técnicas",
+      "p_s_2_3": "Solicitudes nacionales e internacionales",
+      "p_s_2_4": "Registro de diseños industriales",
+      "subtitle3": "Defensa de Derechos",
+      "p_s_3_1": "Solicitud Administrativa de Nulidad",
+      "p_s_3_2": "Solicitud Administrativa de Caducidad",
+      "p_s_3_3": "Solicitud Administrativa de Infracción",
+      "p_s_3_4": "Medidas Cuautelares",
+      "subtitle4": "Derechos de Autor",
+      "p_s_4_1": "Registros de Derechos de Autor",
+      "p_s_4_2": "Reservas de derechos de publicaciones periódicas",
+      "p_s_4_3": "Reservas de derechos de publicaciones periódicas",
+      "p_s_4_4": "Registro de promociones publicitarias",
+      "p_s_4_5": "Obtención de ISSN e ISBN"
+    },
+    "ComercioExterior": {
+      "title": "Comercio Exterior      ",
+      "p_1": "El Comercio Internacional, esto es, el intercambio de bienes, productos y servicios entre dos países o entre dos regiones (Comercio Exterior), no es completamente libre ya que existen barreras establecidas para su regulación y control, entre otras, los aranceles, las salvaguardias, las cuotas de exportación/importación, así como barreras no arancelarias, que incluyen tanto normas legales como procedimientos administrativos no basados en medidas explícitas, sino en directivas informales de instituciones y gobiernos.",
+      "p_2": "Otro tipo de barreras a considerar incluyen el establecimiento de controles sanitarios, fitosanitarios o medioambientales, controles y trámites administrativos, así como controles de embalajes, etiquetados o calidad técnica.",
+      "p_3": "Especialmente importante es la importación de productos, que permiten a los ciudadanos del país de destino, adquirir productos no producidos localmente, o más baratos o de mayor calidad, resultando en un beneficio al consumidor.",
+      "p_4": "En este sentido, nuestros servicios se dirigen hacia el trámite para la obtención de los permisos, registros, certificados y otros documentos, que permitan la importación en el Territorio Nacional, de esos productos de interés para el consumidor, ya sea de forma temporal o definitiva.",
+      "subtitle1": "Permisos de Importación",
+      "p_s_1_1": "Secretaría de Salud",
+      "p_s_1_2": "Secretaría de Economía",
+      "p_s_1_3": "SEMARNAT",
+      "p_s_1_4": "SHCP/SAT",
+      "p_s_1_5": "SEDNA",
+      "subtitle2": "Certificados NOM",
+      "p_s_2_1": "Certificaciones",
+      "p_s_2_2": "Dictámenes",
+      "p_s_2_3": "Pruebas de Laboratorio",
+      "subtitle3": "Trámites ante COFEPRIS",
+      "p_s_3_1": "Registros sanitarios para medicamentos, equipo y dispositivos médicos",
+      "p_s_3_2": "Avisos de Funcionamiento",
+      "p_s_3_3": "Licencias Sanitarias",
+      "p_s_3_4": "Autorizaciones Sanitarias",
+      "p_s_3_5": "Renovación de Registros Sanitarios"
+    },
+    "ServiciosMigratorios": {
+      "title": "Servicios Migratorios",
+      "p_1": "Se denomina migración a todo desplazamiento de la población que se produce desde un lugar de origen a otro destino y lleva consigo un cambio de la residencia habitual. Las migraciones de seres humanos se estudian tanto por la Demografía como por la Geografía de la Población.",
+      "p_2": "La migración a México se da por cuestiones de trabajo, inversión, deporte, investigación, protección internacional tales como refugiado o Asilado u otros; en las cuales es necesario pedir a las autoridades Mexicanas la autorización para internarse de modo legal a nuestro país.",
+      "p_3": "Si deseas trabajar o estudiar en México, notros te podemos ayudar a obtener tu documento migratorio que te permita permanecer sin ningún problema.",
+      "subtitle1": "Permisos de Importación",
+      "p_s_1_1": "Obtención de Forma Migratoria: (No Inmigrante, Inmigrante, Inmigrado)",
+      "p_s_1_2": "Registro Nacional de Extranjeros",
+      "p_s_1_3": "Referendo a Calidad Migratoria",
+      "p_s_1_4": "Naturalización"
+    },
+    "Contacto": {
+      "title": "Contacto",
+      "p_1": "Llene el siguiente formulario y en breve nos pondremos en contacto con usted.",
+      "nombre": "* Nombre:",
+      "empresa": "* Empresa:",
+      "email": "* Email:",
+      "telefono": "* Teléfono:",
+      "asunto": "* Asunto:",
+      "comentario": "* Comentario:",
+      "comentario_placeholder": "Describa en que podemos ayudarle",
+      "boton_enviar": "Enviar mensaje",
+      "boton_limpiar": "Limpiar formulario",
+      "direccion": "Dirección:",
+      "direccion_body": "José María Rico No. 212-302 Colonia Actipan del Valle México, D.F. C.P. 03100",
+      "tel": "Tel:",
+      "tel_1": "(55) 5575 8008",
+      "tel_2": "(55) 5559 1768",
+      "fax": "Fax:",
+      "fax_body": "(55) 5559 1768",
+      "mail": "Email:",
+      "mail_body": "contacto@cgasociados.com.mx",
+      "mandatory": "Este campo es obligatorio"
+    },
+    "Privacidad": {
+      "title": "AVISO DE PRIVACIDAD",
+      "p_1": "Campillo Gómez y Asociados, S.C. (“CGA”), con domicilio en José Ma. Rico 212, Desp. 302, Colonia Actipan Del Valle, 03100, México D.F., es responsable del tratamiento de sus datos personales y tenemos el firme compromiso de garantizar la protección de los mismos y de darles un tratamiento legítimo, controlado e informado.",
+      "p_2": "El presente Aviso de Privacidad se pone a su disposición a fin de hacer de su conocimiento las prácticas que seguimos al obtener, usar, divulgar o almacenar sus datos personales, así como dar a conocer la finalidad para la cual es tratada su información personal.",
+      "p_3": "En CGA estamos comprometidos con el derecho a la privacidad y reconocemos su derecho a decidir, de manera libre e informada, sobre el uso que se darán a sus datos personales.",
+      "p_4": "En todo momento guardaremos confidencialidad respecto de sus datos personales y procuramos cumplir con los principios adoptados para el tratamiento de los mismos, como son, el de licitud, consentimiento, información, calidad, finalidad, lealtad, proporcionalidad y responsabilidad de conformidad con la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (“la Ley”).",
+      "subtitle1": "Finalidades y usos de los datos personales",
+      "p_s_1_1": "Los datos personales que CGA recaba, almacena y de otra forma trata, son proporcionados de manera voluntaria por usted. Dentro de los datos personales que se recaban se encuentran, entre otros, los siguientes: nombre, nacionalidad, fecha de nacimiento, domicilio, Registro Federal de Contribuyentes, número de teléfono y dirección de correo electrónico. CGA no recaba datos personales sensibles (tales como origen racial o étnico, estado de salud presente y futuro, información genética, creencias religiosas, filosóficas y morales, afiliación sindical, opiniones políticas, preferencia sexual), por lo que le pedimos abstenerse de proporcionar este tipo de datos.",
+      "p_s_1_2": "Dichos datos se recaban con la finalidad de auxiliar las operaciones principales de CGA, tales como: Proveer los servicios requeridos; dar cumplimiento a obligaciones contraídas; contar con un directorio con fines de identificación y comunicarse; cubrir solicitudes de procesos internos; enviar comunicaciones por correo electrónico o por cualquier otro medio de comunicación proporcionando información sobre nuestros servicios, nuestro boletín electrónico o noticias de interés sobre derecho de la propiedad intelectual; mejorar y evaluar la calidad de nuestros servicios; informar sobre cambios o nuevos servicios que prestemos o cualquier otra actividad relacionada con nuestra actividad profesional.",
+      "subtitle2": "Seguridad de la información",
+      "p_s_2_1": "Hemos adoptado las medidas de seguridad técnicas, físicas y administrativas razonables para procurar que sus datos personales estén seguros así como restringidos y limitados a personal que requiera tener acceso a ellos, con el fin de proteger sus datos personales contra daño, pérdida, alteración, destrucción, uso, acceso o tratamiento no autorizado y llevar a cabo las finalidades descritas.",
+      "subtitle3": "Información compartida con terceras personas",
+      "p_s_3_1": "CGA se compromete a no transferir su información personal a terceros sin su consentimiento, salvo las excepciones previstas en el artículo 37 de la Ley, así como a realizar dichas transferencia en los términos que fija la misma. Podremos compartir sus datos personales con proveedores de servicios técnicos, administrativos o profesionales que se hayan contratado para ofrecer una mejor calidad en nuestros servicios, quienes sólo recibirán los datos personales que necesiten para realizar los trabajos encomendados.",
+      "p_s_3_2": "Si usted no manifiesta su oposición para que sus datos personales sean transferidos a los terceros arriba referidos, se entenderá que ha otorgado su consentimiento para ello.",
+      "subtitle4": "Derechos que le Corresponden Respecto a sus Datos Personales",
+      "p_s_4_1": "Usted tiene derecho de acceder a sus datos personales que poseemos y a los detalles del tratamiento de los mismos, así como a rectificarlos en caso de ser inexactos o incompletos; cancelarlos cuando considere que no se requieren para alguna de las finalidades señaladas en el presente aviso de privacidad, estén siendo utilizados para fines no consentidos o haya finalizado la relación contractual o de servicio. De igual forma, podrá oponerse al tratamiento de los mismos para fines específicos.",
+      "p_s_4_2": "El mecanismo que se ha implementado para el ejercicio de dichos derechos consiste en la presentación de una solicitud por escrito en nuestro domicilio ante el Encargado de Protección de Datos Personales de CGA.",
+      "p_s_4_3": "Su solicitud deberá contener como mínimo la siguiente información:",
+      "p_s_4_4": "a) El nombre del titular y domicilio u otro medio para comunicarle la respuesta a su solicitud.",
+      "p_s_4_5": "b) Los documentos que acrediten la identidad o, en su caso, la representación legal del titular.",
+      "p_s_4_6": "c) La descripción clara y precisa de los datos personales respecto de los que se busca ejercer alguno de los derechos.",
+      "p_s_4_7": "d) Cualquier otro elemento o documento que facilite la localización de los datos personales, así como cualquier otro documento que exija la legislación vigente al momento de la presentación de la solicitud.",
+      "p_s_4_8": "En un plazo máximo de 5 días hábiles atenderemos su petición y le informaremos sobre la procedencia de la misma a través del medio que haya indicado para tales efectos.",
+      "p_s_4_9": "En todo momento, usted podrá revocar el consentimiento que nos ha otorgado para el tratamiento de sus datos personales, a fin de que dejemos de hacer uso de los mismos. Para ello, es necesario que presente su petición por escrito en nuestro domicilio ante el Encargado de Protección de Datos Personales de CGA, acompañada de la siguiente información:",
+      "p_s_4_10": "a) El nombre del titular y domicilio u otro medio para comunicarle la respuesta a su solicitud.",
+      "p_s_4_11": "b) Los documentos que acrediten la identidad o, en su caso, la representación legal del titular.",
+      "p_s_4_12": "c) La revocación de su consentimiento clara y precisa para el tratamiento de sus datos personales. En un plazo máximo de 5 días hábiles atenderemos su petición y le informaremos sobre la procedencia de la misma a través del medio que haya indicado para tales efectos.",
+      "subtitle5": "Cambios al Aviso de Privacidad",
+      "p_s_5_1": "CGA se reserva el derecho de efectuar en cualquier momento modificaciones o actualizaciones al presente aviso de privacidad, para la atención de novedades legislativas, políticas internas o nuevos requerimientos para la prestación u ofrecimiento de nuestros servicios.",
+      "p_s_5_2": "Estas modificaciones estarán disponibles a través de los siguientes medios:",
+      "p_s_5_3": "(i) directamente en nuestro domicilio;",
+      "p_s_5_4": "(ii) en nuestro sitio web www.cgasociados.com.mx;",
+      "p_s_5_5": "(iii) o se las haremos llegar al último correo electrónico que nos haya proporcionado.",
+      "subtitle6": "Encargado de Protección de Datos Personales",
+      "p_s_6_1": "Las dudas o comentarios respecto al presente, así como el ejercicio de los derechos que por ley le corresponden, deberán dirigirse al Encargado de Protección de Datos Personales de CGA, con domicilio en José Ma. Rico 212, Desp. 302, Colonia Actipan Del Valle, 03100, México D.F., o al correo electrónico contacto@cgasociados.com.mx."
+    },
+    "NotFound": {
+      "title": "Error 404",
+      "p_1": "Página no encontrada"
+    }
+  },
+  "components": {
+    "Footer": {
+      "copyright": "Copyright © by <strong>Campillo Gomez y Asociados S.C.</strong>, 2012, Mexico",
+      "privacidad": "Aviso de privacidad",
+      "ingles": "Ingles",
+      "espanol": "Español"
+    },
+    "Message": {
+      "success": {
+        "title": "Éxito",
+        "content": "El mensaje fue enviado con éxito"
+      },
+      "error": {
+        "title": "Error",
+        "content": "El mensaje no pudo ser enviado, intente mas tarde"
+      }
+    },
+    "NavBar": {
+      "propiedad_intelectual": "Propiedad Intelectual",
+      "comercio_exterior": "Comercio Exterior",
+      "servicios_migratorios": "Servicios Migratorios",
+      "contacto": "Contacto"
+    }
+  }
+}

@@ -3,6 +3,11 @@ import React, { Component } from 'react'
 import logo from '../images/cga.svg'
 import '../styles/pages/Home.css'
 
+import * as spanish from '../utils/sp.json'
+import * as english from '../utils/en.json'
+
+// {this.state.language.default.pages.Home.title}
+
 class Home extends Component {
 
   componentDidMount() {

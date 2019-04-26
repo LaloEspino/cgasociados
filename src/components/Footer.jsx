@@ -2,6 +2,15 @@ import React, { Component, Fragment } from 'react'
 import { Link } from 'react-router-dom'
 
 class Footer extends Component {
+
+  handleClick = (event) => {
+    if (event.target.name === 'es') {
+
+    } else {
+
+    }
+  }
+
   render() {
     return (
       <Fragment>
@@ -14,7 +23,13 @@ class Footer extends Component {
               <Link to='/privacidad'>Aviso de privacidad</Link>
             </p>
             <p>
-              Español - Ingles
+              <button name='sp' className='button' onClick={this.handleClick}>
+                Español
+              </button>
+              <span> - </span>
+              <button name='en' className='button' onClick={this.handleClick}>
+                Ingles
+              </button>
             </p>
           </div>
         </footer>

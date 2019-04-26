@@ -8,7 +8,7 @@ class PropiedadIntelectual extends Component {
 
   render() {
     return (
-      <section class="section">
+      <section className='section'>
         <div className='container'>
           <h1 className='title has-text-centered'>
             Propiedad Intelectual
@@ -40,16 +40,16 @@ class PropiedadIntelectual extends Component {
           </p>
           </div>
 
-          <div className="columns">
-            <div className="column">
-              <div className="card">
-                <header className="card-header">
-                  <p className="card-header-title">
+          <div className='columns'>
+            <div className='column'>
+              <div className='card'>
+                <header className='card-header'>
+                  <p className='card-header-title'>
                     Signos Distintivos
                 </p>
                 </header>
-                <div className="card-content">
-                  <div className="content">
+                <div className='card-content'>
+                  <div className='content'>
                     <p><strong>Registros en México y el extranjero de:</strong></p>
                     <p>Marcas</p>
                     <p>Avisos Comerciales</p>
@@ -58,15 +58,15 @@ class PropiedadIntelectual extends Component {
                 </div>
               </div>
             </div>
-            <div className="column">
-              <div className="card">
-                <header className="card-header">
-                  <p className="card-header-title">
+            <div className='column'>
+              <div className='card'>
+                <header className='card-header'>
+                  <p className='card-header-title'>
                     Invenciones
                 </p>
                 </header>
-                <div className="card-content">
-                  <div className="content">
+                <div className='card-content'>
+                  <div className='content'>
                     <p>Búsquedas del Estado de la Técnica</p>
                     <p>Redacción de memorias Técnicas</p>
                     <p>Solicitudes nacionales e internacionales</p>
@@ -75,15 +75,15 @@ class PropiedadIntelectual extends Component {
                 </div>
               </div>
             </div>
-            <div className="column">
-              <div className="card">
-                <header className="card-header">
-                  <p className="card-header-title">
+            <div className='column'>
+              <div className='card'>
+                <header className='card-header'>
+                  <p className='card-header-title'>
                     Defensa de Derechos
                 </p>
                 </header>
-                <div className="card-content">
-                  <div className="content">
+                <div className='card-content'>
+                  <div className='content'>
                     <p>Solicitud Administrativa de Nulidad</p>
                     <p>Solicitud Administrativa de Caducidad</p>
                     <p>Solicitud Administrativa de Infracción </p>
@@ -93,16 +93,16 @@ class PropiedadIntelectual extends Component {
               </div>
             </div>
           </div>
-          <div className="columns">
-            <div className="column">
-              <div className="card">
-                <header className="card-header">
-                  <p className="card-header-title">
+          <div className='columns'>
+            <div className='column'>
+              <div className='card'>
+                <header className='card-header'>
+                  <p className='card-header-title'>
                     Derechos de Autor
                 </p>
                 </header>
-                <div className="card-content">
-                  <div className="content">
+                <div className='card-content'>
+                  <div className='content'>
                     <p>Registros de Derechos de Autor</p>
                     <p>Reservas de derechos de publicaciones periódicas</p>
                     <p>Reservas de derechos de personajes ficticios</p>

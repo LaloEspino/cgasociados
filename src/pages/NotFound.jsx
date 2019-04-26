@@ -6,19 +6,18 @@ class NotFound extends Component {
   render() {
     return (
       <Fragment>
-        <section class="hero is-medium">
-          <div class="hero-body">
-            <div class="container has-text-centered">
-              <p class="title">
+        <section className='hero is-medium'>
+          <div className='hero-body'>
+            <div className='container has-text-centered'>
+              <p className='title'>
                 Error 404
               </p>
-              <p class="subtitle">
+              <p className='subtitle'>
                 Página no encontrada
               </p>
               <img className='NotFound__image' src={bug} alt='Bug' />
             </div>
           </div>
-
         </section>
       </Fragment>
     )

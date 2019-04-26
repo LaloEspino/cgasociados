@@ -8,7 +8,7 @@ class ServiciosMigratorios extends Component {
 
   render() {
     return (
-      <section class="section">
+      <section className='section'>
         <div className='container'>
           <h1 className='title has-text-centered'>
             Servicios Migratorios
@@ -26,16 +26,16 @@ class ServiciosMigratorios extends Component {
           </p>
           </div>
 
-          <div className="columns">
-            <div className="column">
-              <div className="card">
-                <header className="card-header">
-                  <p className="card-header-title">
+          <div className='columns'>
+            <div className='column'>
+              <div className='card'>
+                <header className='card-header'>
+                  <p className='card-header-title'>
                     Permisos de Importación
                 </p>
                 </header>
-                <div className="card-content">
-                  <div className="content">
+                <div className='card-content'>
+                  <div className='content'>
                     <p>
                       Obtención de Forma Migratoria: (No Inmigrante, Inmigrante, Inmigrado)
                   </p>

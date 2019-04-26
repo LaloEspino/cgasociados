@@ -1,0 +1,163 @@
+{
+  "pages": {
+    "Home": {
+      "title": "",
+      "title_p": "",
+      "mision_title": "",
+      "mision_p": "",
+      "expreriencia_title": "",
+      "expreriencia_p": ""
+    },
+    "PropiedadIntelectual": {
+      "title": "",
+      "p_1": "",
+      "p_2": "",
+      "p_3": "",
+      "p_4": "",
+      "p_5": "",
+      "p_6": "",
+      "subtitle1": "",
+      "p_s_1_1": "",
+      "p_s_1_2": "",
+      "p_s_1_3": "",
+      "p_s_1_4": "",
+      "subtitle2": "",
+      "p_s_2_1": "",
+      "p_s_2_2": "",
+      "p_s_2_3": "",
+      "p_s_2_4": "",
+      "subtitle3": "",
+      "p_s_3_1": "",
+      "p_s_3_2": "",
+      "p_s_3_3": "",
+      "p_s_3_4": "",
+      "subtitle4": "",
+      "p_s_4_1": "",
+      "p_s_4_2": "",
+      "p_s_4_3": "",
+      "p_s_4_4": "",
+      "p_s_4_5": ""
+    },
+    "ComercioExterior": {
+      "title": "",
+      "p_1": "",
+      "p_2": "",
+      "p_3": "",
+      "p_4": "",
+      "subtitle1": "",
+      "p_s_1_1": "",
+      "p_s_1_2": "",
+      "p_s_1_3": "",
+      "p_s_1_4": "",
+      "p_s_1_5": "",
+      "subtitle2": "",
+      "p_s_2_1": "",
+      "p_s_2_2": "",
+      "p_s_2_3": "",
+      "subtitle3": "",
+      "p_s_3_1": "",
+      "p_s_3_2": "",
+      "p_s_3_3": "",
+      "p_s_3_4": "",
+      "p_s_3_5": ""
+    },
+    "ServiciosMigratorios": {
+      "title": "",
+      "p_1": "",
+      "p_2": "",
+      "p_3": "",
+      "subtitle1": "",
+      "p_s_1_1": "",
+      "p_s_1_2": "",
+      "p_s_1_3": "",
+      "p_s_1_4": ""
+    },
+    "Contacto": {
+      "title": "",
+      "p_1": "",
+      "nombre": "",
+      "empresa": "",
+      "email": "",
+      "telefono": "",
+      "asunto": "",
+      "comentario": "",
+      "comentario_placeholder": "",
+      "boton_enviar": "",
+      "boton_limpiar": "",
+      "direccion": "",
+      "direccion_body": "",
+      "tel": "",
+      "tel_1": "",
+      "tel_2": "",
+      "fax": "",
+      "fax_body": "",
+      "mail": "",
+      "mail_body": "",
+      "mandatory": ""
+    },
+    "Privacidad": {
+      "title": "",
+      "p_1": "",
+      "p_2": "",
+      "p_3": "",
+      "p_4": "",
+      "subtitle1": "",
+      "p_s_1_1": "",
+      "p_s_1_2": "",
+      "subtitle2": "",
+      "p_s_2_1": "",
+      "subtitle3": "",
+      "p_s_3_1": "",
+      "p_s_3_2": "",
+      "subtitle4": "",
+      "p_s_4_1": "",
+      "p_s_4_2": "",
+      "p_s_4_3": "",
+      "p_s_4_4": "",
+      "p_s_4_5": "",
+      "p_s_4_6": "",
+      "p_s_4_7": "",
+      "p_s_4_8": "",
+      "p_s_4_9": "",
+      "p_s_4_10": "",
+      "p_s_4_11": "",
+      "p_s_4_12": "",
+      "subtitle5": "",
+      "p_s_5_1": "",
+      "p_s_5_2": "",
+      "p_s_5_3": "",
+      "p_s_5_4": "",
+      "p_s_5_5": "",
+      "subtitle6": "",
+      "p_s_6_1": ""
+    },
+    "NotFound": {
+      "title": "",
+      "p_1": ""
+    }
+  },
+  "components": {
+    "Footer": {
+      "copyright": "",
+      "privacidad": "",
+      "ingles": "",
+      "espanol": ""
+    },
+    "Message": {
+      "success": {
+        "title": "",
+        "content": ""
+      },
+      "error": {
+        "title": "",
+        "content": ""
+      }
+    },
+    "NavBar": {
+      "propiedad_intelectual": "",
+      "comercio_exterior": "",
+      "servicios_migratorios": "",
+      "contacto": ""
+    }
+  }
+}
