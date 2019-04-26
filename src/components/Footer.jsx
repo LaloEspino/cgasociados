@@ -5,8 +5,8 @@ class Footer extends Component {
   render() {
     return (
       <Fragment>
-        <footer className="footer">
-          <div className="content has-text-centered">
+        <footer className='footer'>
+          <div className='content has-text-centered'>
             <p>
               Copyright © by <strong>Campillo Gomez y Asociados S.C.</strong>, 2012, Mexico
             </p>

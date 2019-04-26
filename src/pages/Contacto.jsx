@@ -3,6 +3,7 @@ import * as emailjs from 'emailjs-com'
 
 import '../styles/pages/Contacto.css'
 import Message from '../components/Message';
+import Loader from '../components/Loader';
 
 const SERVICE_ID = 'mailgun'
 const TEMPLATE_ID = 'contacto'
@@ -19,8 +20,11 @@ class Contacto extends Component {
       telefono: '',
       asunto: '',
       comentario: '',
+
       sended: false,
-      pressed: false
+      pressed: false,
+      loading: false,
+      disabled: false
     }
   }
 
@@ -49,6 +53,8 @@ class Contacto extends Component {
 
     if (this.fieldsIntroduced()) {
 
+      this.setState({ loading: true, disabled: true })
+
       const templateParams = {
         nombre: this.state.nombre,
         empresa: this.state.empresa,
@@ -62,11 +68,15 @@ class Contacto extends Component {
         .send(SERVICE_ID, TEMPLATE_ID, templateParams, USER_ID)
         .then(res => {
           this.restartFields()
-          this.setState({ sended: true, error: false })
+          this.setState({ pressed: false, sended: true, error: false, loading: false, disabled: false })
+          setTimeout(() =>
+            this.setState({ sended: false })
+            , 10000
+          )
         })
         .catch(error => {
           console.error('Failed to send feedback. Error: ', error)
-          this.setState({ sended: true, error: true })
+          this.setState({ pressed: false, sended: true, error: true, loading: false, disabled: false })
         })
 
     }
@@ -115,167 +125,172 @@ class Contacto extends Component {
             </p>
 
             <form onSubmit={this.handleSubmit}>
-              <div className='field is-horizontal'>
-                <div className='field-label is-normal'>
-                  <label className='label'>Nombre:</label>
-                </div>
-                <div className='field-body'>
-                  <div className='field'>
-                    <p className='control is-expanded'>
-                      <input
-                        className='input'
-                        name='nombre'
-                        value={this.state.nombre}
-                        onChange={this.handleChange}
-                        type='text'
-                        placeholder='' />
-                    </p>
-                    {this.state.nombre === null && this.state.pressed && <p className='help is-danger'>
-                      Este campo es obligatorio
-                  </p>}
-                  </div>
-                </div>
-              </div>
 
-              <div className='field is-horizontal'>
-                <div className='field-label is-normal'>
-                  <label className='label'>Empresa:</label>
-                </div>
-                <div className='field-body'>
-                  <div className='field'>
-                    <p className='control is-expanded'>
-                      <input
-                        className='input'
-                        name='empresa'
-                        value={this.state.empresa}
-                        onChange={this.handleChange}
-                        type='text'
-                        placeholder='' />
-                    </p>
-                    {this.state.empresa === null && this.state.pressed && <p className='help is-danger'>
-                      Este campo es obligatorio
-                  </p>}
-                  </div>
-                </div>
-              </div>
+              <fieldset disabled={this.state.disabled}>
 
-              <div className='field is-horizontal'>
-                <div className='field-label is-normal'>
-                  <label className='label'>Email:</label>
-                </div>
-                <div className='field-body'>
-                  <div className='field'>
-                    <p className='control is-expanded'>
-                      <input
-                        className='input'
-                        name='email'
-                        value={this.state.email}
-                        onChange={this.handleChange}
-                        type='email'
-                        placeholder='' />
-                    </p>
-                    {this.state.email === null && this.state.pressed && <p className='help is-danger'>
-                      Este campo es obligatorio
-                  </p>}
+                <div className='field is-horizontal'>
+                  <div className='field-label is-normal'>
+                    <label className='label'>Nombre:</label>
                   </div>
-                </div>
-              </div>
-
-              <div className='field is-horizontal'>
-                <div className='field-label is-normal'>
-                  <label className='label'>Teléfono:</label>
-                </div>
-                <div className='field-body'>
-                  <div className='field is-expanded'>
-                    <div className='field has-addons'>
-                      <p className='control'>
-                        <span className='button is-static'>
-                          +55
-                      </span>
-                      </p>
+                  <div className='field-body'>
+                    <div className='field'>
                       <p className='control is-expanded'>
                         <input
                           className='input'
-                          name='telefono'
-                          value={this.state.telefono}
+                          name='nombre'
+                          value={this.state.nombre}
                           onChange={this.handleChange}
-                          type='tel'
+                          type='text'
                           placeholder='' />
                       </p>
+                      {this.state.nombre === '' && this.state.pressed === true && <p className='help is-danger'>
+                        Este campo es obligatorio
+                  </p>}
                     </div>
-                    {this.state.telefono === null && this.state.pressed && <p className='help is-danger'>
-                      Este campo es obligatorio
-                  </p>}
                   </div>
                 </div>
-              </div>
 
-              <div className='field is-horizontal'>
-                <div className='field-label is-normal'>
-                  <label className='label'>Asunto</label>
-                </div>
-                <div className='field-body'>
-                  <div className='field'>
-                    <p className='control is-expanded'>
-                      <input
-                        className='input'
-                        name='asunto'
-                        value={this.state.asunto}
-                        onChange={this.handleChange}
-                        type='text'
-                        placeholder='' />
-                    </p>
-                    {this.state.asunto === null && this.state.pressed && <p className='help is-danger'>
-                      Este campo es obligatorio
-                  </p>}
+                <div className='field is-horizontal'>
+                  <div className='field-label is-normal'>
+                    <label className='label'>Empresa:</label>
                   </div>
-                </div>
-              </div>
-
-              <div className='field is-horizontal'>
-                <div className='field-label is-normal'>
-                  <label className='label'>Comentario</label>
-                </div>
-                <div className='field-body'>
-                  <div className='field'>
-                    <div className='control'>
-                      <textarea
-                        name='comentario'
-                        value={this.state.comentario}
-                        onChange={this.handleChange}
-                        type='text'
-                        className='textarea'
-                        placeholder='Describa en que podemos ayudarle'></textarea>
+                  <div className='field-body'>
+                    <div className='field'>
+                      <p className='control is-expanded'>
+                        <input
+                          className='input'
+                          name='empresa'
+                          value={this.state.empresa}
+                          onChange={this.handleChange}
+                          type='text'
+                          placeholder='' />
+                      </p>
+                      {this.state.empresa === '' && this.state.pressed === true && <p className='help is-danger'>
+                        Este campo es obligatorio
+                  </p>}
                     </div>
-                    {this.state.comentario === null && this.state.pressed && <p className='help is-danger'>
-                      Este campo es obligatorio
-                  </p>}
                   </div>
                 </div>
-              </div>
 
-              <div className='field is-horizontal'>
-                <div className='field-label'>
+                <div className='field is-horizontal'>
+                  <div className='field-label is-normal'>
+                    <label className='label'>Email:</label>
+                  </div>
+                  <div className='field-body'>
+                    <div className='field'>
+                      <p className='control is-expanded'>
+                        <input
+                          className='input'
+                          name='email'
+                          value={this.state.email}
+                          onChange={this.handleChange}
+                          type='email'
+                          placeholder='' />
+                      </p>
+                      {this.state.email === '' && this.state.pressed === true && <p className='help is-danger'>
+                        Este campo es obligatorio
+                  </p>}
+                    </div>
+                  </div>
                 </div>
-                <div className='field-body'>
-                  <div className='field is-grouped'>
-                    <div className='control'>
-                      <button className='button is-link'>
-                        Enviar mensaje
+
+                <div className='field is-horizontal'>
+                  <div className='field-label is-normal'>
+                    <label className='label'>Teléfono:</label>
+                  </div>
+                  <div className='field-body'>
+                    <div className='field is-expanded'>
+                      <div className='field has-addons'>
+                        <p className='control'>
+                          <span className='button is-static'>
+                            +55
+                      </span>
+                        </p>
+                        <p className='control is-expanded'>
+                          <input
+                            className='input'
+                            name='telefono'
+                            value={this.state.telefono}
+                            onChange={this.handleChange}
+                            type='tel'
+                            placeholder='' />
+                        </p>
+                      </div>
+                      {this.state.telefono === '' && this.state.pressed === true && <p className='help is-danger'>
+                        Este campo es obligatorio
+                  </p>}
+                    </div>
+                  </div>
+                </div>
+
+                <div className='field is-horizontal'>
+                  <div className='field-label is-normal'>
+                    <label className='label'>Asunto</label>
+                  </div>
+                  <div className='field-body'>
+                    <div className='field'>
+                      <p className='control is-expanded'>
+                        <input
+                          className='input'
+                          name='asunto'
+                          value={this.state.asunto}
+                          onChange={this.handleChange}
+                          type='text'
+                          placeholder='' />
+                      </p>
+                      {this.state.asunto === '' && this.state.pressed === true && <p className='help is-danger'>
+                        Este campo es obligatorio
+                  </p>}
+                    </div>
+                  </div>
+                </div>
+
+                <div className='field is-horizontal'>
+                  <div className='field-label is-normal'>
+                    <label className='label'>Comentario</label>
+                  </div>
+                  <div className='field-body'>
+                    <div className='field'>
+                      <div className='control'>
+                        <textarea
+                          name='comentario'
+                          value={this.state.comentario}
+                          onChange={this.handleChange}
+                          type='text'
+                          className='textarea'
+                          placeholder='Describa en que podemos ayudarle'></textarea>
+                      </div>
+                      {this.state.comentario === '' && this.state.pressed === true && <p className='help is-danger'>
+                        Este campo es obligatorio
+                  </p>}
+                    </div>
+                  </div>
+                </div>
+
+                <div className='field is-horizontal'>
+                  <div className='field-label'>
+                  </div>
+                  <div className='field-body'>
+                    <div className='field is-grouped'>
+                      <div className='control'>
+                        <button className='button is-link'>
+                          Enviar mensaje
                     </button>
-                    </div>
-                    <div className='control'>
-                      <button onClick={this.handleClick} className='button is-text'>
-                        Limpiar formulario
+                      </div>
+                      <div className='control'>
+                        <button type='button' onClick={this.handleClick} className='button is-text'>
+                          Limpiar formulario
                     </button>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              {this.state.sended &&
-                <Message error={this.state.error} onClose={this.handleClose} />
-              }
+                <Loader loading={this.state.loading} />
+
+                <Message sended={this.state.sended} error={this.state.error} onClose={this.handleClose} />
+
+              </fieldset>
 
             </form>
 
@@ -295,11 +310,11 @@ class Contacto extends Component {
                 </p>
 
                 <p>
-                  <strong>Tel</strong>: <a href="tel:55 5575 8008">(55) 5575 8008</a> | <a href="tel:55 5559 1768">(55) 5559 1768</a>
+                  <strong>Tel</strong>: <a href='tel:55 5575 8008'>(55) 5575 8008</a> | <a href='tel:55 5559 1768'>(55) 5559 1768</a>
                 </p>
 
                 <p>
-                  <strong>Fax</strong>: <a href="tel:55 5559 1768">(55) 5559 1768</a>
+                  <strong>Fax</strong>: <a href='tel:55 5559 1768'>(55) 5559 1768</a>
                 </p>
 
                 <p>
