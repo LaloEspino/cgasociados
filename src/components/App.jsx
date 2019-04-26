@@ -23,6 +23,7 @@ class App extends React.Component {
         <Layout>
           <Switch>
             <Route exact path='/' component={Home} />
+            {/* Para github pages */}
             <Route exact path='/cgasociados' component={Home} />
             <Route exact path='/propiedad-intelectual' component={PropiedadIntelectual} />
             <Route exact path='/comercio-exterior' component={ComercioExterior} />

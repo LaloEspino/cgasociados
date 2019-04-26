@@ -19,13 +19,19 @@ class NavBar extends Component {
     })
   }
 
+  handleClose = (e) => {
+    this.setState({
+      open: false
+    })
+  }
+
   render() {
     return (
       <Fragment>
         <nav className='navbar is-light' role='navigation' aria-label='main navigation'>
           <div className='navbar-brand'>
 
-            <Link className={`navbar-item ${window.location.pathname === '/' && 'is-active'}`} onClick={this.handleClick} to='/'>
+            <Link className='navbar-item' onClick={this.handleClose} to='/'>
               <img className='NavBar__image' src={cga} alt='Bug' />
               <p className='title is-6'>
                 CGAsociados
